@@ -1,1 +1,1 @@
-# Material UI & React admin frontend with Supabase backend
+Material UI & React admin frontend based on Supabase backend
