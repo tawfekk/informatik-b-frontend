@@ -16,8 +16,8 @@ import {
 function PostList() {
     return (
         <List
-            sort={{ field: 'published_at', order: 'DESC' }}
-            filters={[<SearchInput source="q" alwaysOn key="q" />]}
+            sort={{ field: 'id', order: 'DESC' }}
+            filters={[<SearchInput source="id" alwaysOn key="id" />]}
             actions={
                 <TopToolbar>
                     <SelectColumnsButton />
@@ -27,18 +27,13 @@ function PostList() {
             }
         >
             <DatagridConfigurable rowClick="edit">
-                <TextField source="title" />
-                <NumberField source="views" />
-                <NumberField source="average_note" />
-                <BooleanField source="commentable" />
-                <DateField source="published_at" />
-                <ReferenceArrayField
-                    label="Tags"
-                    reference="tags"
-                    source="tags"
-                    sortBy="tags.name"
-                    sort={{ field: 'name.en', order: 'ASC' }}
-                />
+            <TextField source="id" />
+            <TextField source="speed" />
+            <TextField source="ram" />
+            <TextField source="hd" />
+            <TextField source="rd" />
+            <TextField source="price" />
+            <TextField source="created_at" />
             </DatagridConfigurable>
         </List>
     );
