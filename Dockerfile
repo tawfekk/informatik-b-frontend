@@ -5,7 +5,7 @@ WORKDIR /app
 # Cache and Install dependencies
 COPY package.json .
 COPY yarn.lock .
-RUN yarn add vite
+RUN yarn
 RUN yarn install --production
 # Copy app files
 COPY . .
