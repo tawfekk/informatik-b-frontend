@@ -10,7 +10,7 @@ import {
 import BookIcon from '@mui/icons-material/Book';
 import ChatBubbleIcon from '@mui/icons-material/ChatBubble';
 
-import dataProvider from './dataProvider';
+import dataProvider from './supabase/dataProvider';
 import PostList from './posts/PostList';
 import PostEdit from './posts/PostEdit';
 import PostCreate from './posts/PostCreate';
